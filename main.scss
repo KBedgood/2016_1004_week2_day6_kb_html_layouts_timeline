@@ -1,0 +1,134 @@
+* {
+            box-sizing: border-box;
+}
+
+@import "mixins";
+$headers: white;
+$bodyCopy: white;
+$themeColor: #6CBFEE;
+.container {
+            width: 990px;
+            @include center();
+}
+
+.rectangle {
+            height: 242px;
+            background-color: lighten($themeColor, 20);
+            width: 6px;
+            @include center();
+            position: relative;
+            z-index: -2;
+            .largeCircle {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 100px;
+                        background-color: #c7e7f9;
+                        position: absolute;
+                        z-index: -1;
+                        top: 0px;
+                        left: -15px;
+                        animation: bounce 2s infinite;
+            }
+            .smallCircle {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100px;
+                        background-color: #1995db;
+                        position: absolute;
+                        z-index: 1;
+                        top: 4.5px;
+                        left: -10px;
+            }
+}
+
+body {
+            font-family: "Helvetica", sans-serif;
+            line-height: 1.4em;
+}
+
+.dateTime,
+.iconBar,
+.content {
+            display: inline-block;
+            vertical-align: top;
+}
+
+.dateTime {
+            width: 25%;
+            text-align: right;
+            margin-right: -26px;
+}
+
+.date {
+            color: lighten(grey, 30);
+            font-size: 8px;
+}
+
+.time {
+            color: $themeColor;
+            font-size: 26px;
+}
+
+i {
+	color: $bodyCopy;
+	font-size: 23px !important;
+	text-align: center;
+	display: block !important;
+	margin-top: 1px;
+}
+
+.iconBar {
+            width: 10%;
+}
+
+.content {
+            width: 53%;
+            margin-left: -22px;
+            padding: 10px 20px;
+            background-color: #6CBFEE;
+}
+
+.title {
+            color: $headers;
+            font-size: 16px;
+            font-weight: bold;
+                        padding: 12px;
+
+}
+
+.blog {
+            font-size: 12px;
+            color: white;
+            line-height: 17px;
+            padding: 12px;
+            padding-bottom: 25px;
+            padding-top: 15px;
+            border-top: 1px solid white;
+}
+
+@keyframes bounce{
+	0% {transform: scale(1)}
+	50%{transform: scale(1.25)}
+	100%{transform: scale(1)}
+}
+
+@media (max-width: 990px){
+
+.container {
+	width: 100%;
+}
+
+.iconBar {
+	display: none;
+}
+
+.dateTime, .content {
+	display: block;
+	width: 100%;
+}
+
+}
+
+.footer {
+            @include footer();
+}
