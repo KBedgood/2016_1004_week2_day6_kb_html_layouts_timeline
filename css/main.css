@@ -2441,8 +2441,8 @@ i {
   width: 10%; }
 
 .content {
+  height: 192px;
   width: 53%;
-  margin-left: -22px;
   padding: 10px 20px;
   background-color: #b1ddf6; }
 
@@ -2479,9 +2479,8 @@ i {
 .content2,
 .content3 {
   width: 53%;
-  margin-left: 307px;
-  margin-top: -226px;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  display: inline-block; }
 
 .content2 {
   background-color: #83c9f1; }
@@ -2496,9 +2495,8 @@ i {
   padding: 12px;
   animation: slideInDown 4s; }
 
-.entry {
-  margin-bottom: 20px;
-  max-height: 200px; }
+.rectangle3 {
+  height: 200px; }
 
 .blog {
   font-size: 12px;
@@ -2519,13 +2517,21 @@ i {
 
 @media (max-width: 990px) {
   .container {
-    width: 100%; }
+    width: 100%;
+    padding: 20px; }
   .iconBar {
     display: none; }
   .dateTime,
   .content {
+    height: 100%;
     display: block;
-    width: 100%; } }
+    width: 100%; }
+  .carrot {
+    display: none; }
+  .time {
+    margin-bottom: 15px; }
+  .entry {
+    margin-bottom: 30px; } }
 
 .footer {
   font-family: helvetica, serif;
