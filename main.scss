@@ -3,9 +3,14 @@
 }
 
 @import "mixins";
+@import "animate";
+// Add the class animated to the element you want to animate. 
+// You may also want to include the class infinite for an infinite loop.
+
 $headers: white;
 $bodyCopy: white;
 $themeColor: #6CBFEE;
+
 .container {
             width: 990px;
             @include center();
@@ -93,7 +98,7 @@ i {
             font-size: 16px;
             font-weight: bold;
                         padding: 12px;
-
+                        animation: slideInDown 4s infinite;
 }
 
 .blog {
