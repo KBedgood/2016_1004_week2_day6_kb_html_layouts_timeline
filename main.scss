@@ -99,13 +99,40 @@ i {
             background-color: lighten(#6CBFEE, 15);
 }
 
-// .carrot {
-//             width: 40px;
-//             height: 40px;
-//             background-color: orange;
-//             transform: rotate(45deg);
-//             margin-left: -60px;
-// }
+.carrot1 {
+    position: absolute;
+    top: -2px;
+    width: 40px;
+    height: 40px;
+    background-color: $themeColor;
+    transform: rotate(45deg);
+    margin-left: -19px;
+    z-index: -3;
+}
+
+.carrot2 {
+    position: absolute;
+    top: 234px;
+    width: 20px;
+    height: 20px;
+    background-color: lighten($theme, 15);
+
+    transform: rotate(45deg);
+    margin-left: -24px;
+    z-index: -3;
+}
+
+.carrot3 {
+    position: absolute;
+    top: 433px;
+    width: 20px;
+    height: 20px;
+    background-color: $themeColor;
+    transform: rotate(45deg);
+    margin-left: -25px;
+    z-index: -3;
+}
+
 .content2,
 .content3 {
             width: 53%;
