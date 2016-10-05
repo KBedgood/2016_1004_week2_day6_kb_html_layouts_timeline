@@ -2374,7 +2374,7 @@
   margin: 0px auto; }
 
 .rectangle {
-  height: 242px;
+  height: 230px;
   background-color: #c7e7f9;
   width: 6px;
   margin: 0px auto;
@@ -2388,8 +2388,9 @@
     position: absolute;
     z-index: -1;
     top: 0px;
-    left: -15px;
-    animation: bounce 2s infinite; }
+    left: -15px; }
+    .rectangle .largeCircle .entry, .rectangle .largeCircle .largeCircle {
+      animation: bounce 2s infinite; }
   .rectangle .smallCircle {
     width: 25px;
     height: 25px;
@@ -2430,6 +2431,13 @@ i {
   display: block !important;
   margin-top: 1px; }
 
+#laptop i {
+  color: white;
+  font-size: 16px !important;
+  text-align: center;
+  display: block !important;
+  margin-top: 5px; }
+
 .iconBar {
   width: 10%; }
 
@@ -2437,14 +2445,27 @@ i {
   width: 53%;
   margin-left: -22px;
   padding: 10px 20px;
-  background-color: #6CBFEE; }
+  background-color: #b1ddf6; }
+
+.content2,
+.content3 {
+  width: 53%;
+  margin-left: 307px;
+  margin-top: -226px;
+  padding: 10px 20px; }
+
+.content2 {
+  background-color: #83c9f1; }
+
+.content3 {
+  background-color: #55b5eb; }
 
 .title {
   color: white;
   font-size: 16px;
   font-weight: bold;
   padding: 12px;
-  animation: slideInDown 4s infinite; }
+  animation: slideInDown 4s; }
 
 .blog {
   font-size: 12px;
@@ -2468,7 +2489,8 @@ i {
     width: 100%; }
   .iconBar {
     display: none; }
-  .dateTime, .content {
+  .dateTime,
+  .content {
     display: block;
     width: 100%; } }
 
