@@ -29,10 +29,8 @@ $themeColor: #6CBFEE;
                         position: absolute;
                         z-index: -1;
                         top: 0px;
+                        animation: bounce 2s infinite;
                         left: -15px;
-                        .entry, .largeCircle {
-                                    animation: bounce 2s infinite;
-                        }
             }
             .smallCircle {
                         width: 25px;
@@ -130,6 +128,11 @@ i {
             font-weight: bold;
             padding: 12px;
             animation: slideInDown 4s;
+}
+
+.entry {
+      margin-bottom:20px;
+      max-height:200px;
 }
 
 .blog {
